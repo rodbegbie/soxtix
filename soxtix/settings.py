@@ -81,6 +81,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'soxtix.soxmeup'
 )
 
 EMAIL_HOST = "flaming.arsecandle.org"
