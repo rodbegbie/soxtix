@@ -24,6 +24,9 @@ INSERT INTO "django_admin_log" VALUES(12,'2009-01-11 22:15:38.823988',1,9,'7','G
 INSERT INTO "django_admin_log" VALUES(13,'2009-01-11 22:33:10.766837',1,10,'1','Friend object',1,'');
 INSERT INTO "django_admin_log" VALUES(14,'2009-01-11 22:33:31.913741',1,10,'1','Friend object',2,'No fields changed.');
 INSERT INTO "django_admin_log" VALUES(15,'2009-01-11 22:35:00.705169',1,10,'None','Friend object',3,'');
+INSERT INTO "django_admin_log" VALUES(16,'2009-01-11 23:22:28.248456',1,10,'None','Rod',3,'');
+INSERT INTO "django_admin_log" VALUES(17,'2009-01-11 23:22:53.812402',1,10,'None','Joy',3,'');
+INSERT INTO "django_admin_log" VALUES(18,'2009-01-11 23:22:59.971787',1,10,'None','Joy',3,'');
 CREATE TABLE "auth_permission" (
     "id" integer NOT NULL PRIMARY KEY,
     "name" varchar(50) NOT NULL,
