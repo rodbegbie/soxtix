@@ -27,6 +27,25 @@ INSERT INTO "django_admin_log" VALUES(15,'2009-01-11 22:35:00.705169',1,10,'None
 INSERT INTO "django_admin_log" VALUES(16,'2009-01-11 23:22:28.248456',1,10,'None','Rod',3,'');
 INSERT INTO "django_admin_log" VALUES(17,'2009-01-11 23:22:53.812402',1,10,'None','Joy',3,'');
 INSERT INTO "django_admin_log" VALUES(18,'2009-01-11 23:22:59.971787',1,10,'None','Joy',3,'');
+INSERT INTO "django_admin_log" VALUES(19,'2010-03-21 13:46:24.958405',1,9,'1','Wed 04/08/09: Tampa Bay Rays',3,'');
+INSERT INTO "django_admin_log" VALUES(20,'2010-03-21 13:46:24.960162',1,9,'2','Wed 04/22/09: Minnesota Twins',3,'');
+INSERT INTO "django_admin_log" VALUES(21,'2010-03-21 13:46:24.961640',1,9,'3','Sat 04/25/09: New York Yankees',3,'');
+INSERT INTO "django_admin_log" VALUES(22,'2010-03-21 13:46:24.963083',1,9,'4','Sat 05/09/09: Tampa Bay Rays',3,'');
+INSERT INTO "django_admin_log" VALUES(23,'2010-03-21 13:46:24.964526',1,9,'5','Wed 06/17/09: Florida Marlins',3,'');
+INSERT INTO "django_admin_log" VALUES(24,'2010-03-21 13:46:24.966295',1,9,'6','Mon 07/06/09: Oakland Athletics',3,'');
+INSERT INTO "django_admin_log" VALUES(25,'2010-03-21 13:46:24.967837',1,9,'7','Wed 09/09/09: Baltimore Orioles',3,'');
+INSERT INTO "django_admin_log" VALUES(26,'2010-03-21 13:46:24.974869',1,9,'8','Mon 09/28/09: Toronto Blue Jays',3,'');
+INSERT INTO "django_admin_log" VALUES(27,'2010-03-21 13:46:24.977305',1,9,'9','Sat 10/03/09: Cleveland Indians',3,'');
+INSERT INTO "django_admin_log" VALUES(28,'2010-03-21 13:46:50.496627',1,9,'1','Tue 04/06/10: New York Yankees',1,'');
+INSERT INTO "django_admin_log" VALUES(29,'2010-03-21 13:47:30.347875',1,9,'2','Sat 04/17/10: Tampa Bay Rays',1,'');
+INSERT INTO "django_admin_log" VALUES(30,'2010-03-21 13:47:38.472371',1,9,'3','Wed 04/21/10: Texas Rangers',1,'');
+INSERT INTO "django_admin_log" VALUES(31,'2010-03-21 13:47:47.137959',1,9,'4','Mon 05/03/10: Los Angeles Angels',1,'');
+INSERT INTO "django_admin_log" VALUES(32,'2010-03-21 13:47:58.660501',1,9,'5','Wed 06/16/10: Arizona Diamondbacks',1,'');
+INSERT INTO "django_admin_log" VALUES(33,'2010-03-21 13:48:12.178055',1,9,'6','Sat 07/03/10: Baltimore Orioles',1,'');
+INSERT INTO "django_admin_log" VALUES(34,'2010-03-21 13:48:23.515253',1,9,'7','Sat 08/21/10: Toronto Blue Jays',1,'');
+INSERT INTO "django_admin_log" VALUES(35,'2010-03-21 13:48:31.881565',1,9,'8','Mon 09/06/10: Tampa Bay Rays',1,'');
+INSERT INTO "django_admin_log" VALUES(36,'2010-03-21 13:48:40.096534',1,9,'9','Mon 09/20/10: Baltimore Orioles',1,'');
+INSERT INTO "django_admin_log" VALUES(37,'2010-03-21 13:48:48.520710',1,9,'10','Sat 10/02/10: New York Yankees',1,'');
 CREATE TABLE "auth_permission" (
     "id" integer NOT NULL PRIMARY KEY,
     "name" varchar(50) NOT NULL,
@@ -81,7 +100,7 @@ CREATE TABLE "auth_user" (
     "last_login" datetime NOT NULL,
     "date_joined" datetime NOT NULL
 );
-INSERT INTO "auth_user" VALUES(1,'rod','','','rod@begbie.com','sha1$9bbd2$ab006b5addc63f3349fdf138f53f1231962b61f0',1,1,1,'2009-01-11 22:04:43.199932','2009-01-11 21:56:07.334727');
+INSERT INTO "auth_user" VALUES(1,'rod','','','rod@begbie.com','sha1$9bbd2$ab006b5addc63f3349fdf138f53f1231962b61f0',1,1,1,'2010-03-21 13:46:01.342077','2009-01-11 21:56:07.334727');
 CREATE TABLE "auth_message" (
     "id" integer NOT NULL PRIMARY KEY,
     "user_id" integer NOT NULL REFERENCES "auth_user" ("id"),
@@ -113,6 +132,10 @@ INSERT INTO "django_session" VALUES('4308efdfa6be90585cd04a9bdabff899','gAJ9cQEo
 cy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LjA5YTE5ZjcwOWY3OGE5YTg2NGM0
 OWNkNGMyMDc0M2Mw
 ','2009-01-25 22:04:43.235441');
+INSERT INTO "django_session" VALUES('0dc51d87f9be15a561a71af82819fb1c','gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k
+cy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LjA5YTE5ZjcwOWY3OGE5YTg2NGM0
+OWNkNGMyMDc0M2Mw
+','2010-04-04 13:46:01.351944');
 CREATE TABLE "django_site" (
     "id" integer NOT NULL PRIMARY KEY,
     "domain" varchar(100) NOT NULL,
@@ -142,15 +165,16 @@ CREATE TABLE "soxmeup_game" (
     "date" date NOT NULL,
     "team" varchar(100) NOT NULL
 );
-INSERT INTO "soxmeup_game" VALUES(1,'2009-04-08','Tampa Bay Rays');
-INSERT INTO "soxmeup_game" VALUES(2,'2009-04-22','Minnesota Twins');
-INSERT INTO "soxmeup_game" VALUES(3,'2009-04-25','New York Yankees');
-INSERT INTO "soxmeup_game" VALUES(4,'2009-05-09','Tampa Bay Rays');
-INSERT INTO "soxmeup_game" VALUES(5,'2009-06-17','Florida Marlins');
-INSERT INTO "soxmeup_game" VALUES(6,'2009-07-06','Oakland Athletics');
-INSERT INTO "soxmeup_game" VALUES(7,'2009-09-09','Baltimore Orioles');
-INSERT INTO "soxmeup_game" VALUES(8,'2009-09-28','Toronto Blue Jays');
-INSERT INTO "soxmeup_game" VALUES(9,'2009-10-03','Cleveland Indians');
+INSERT INTO "soxmeup_game" VALUES(1,'2010-04-06','New York Yankees');
+INSERT INTO "soxmeup_game" VALUES(2,'2010-04-17','Tampa Bay Rays');
+INSERT INTO "soxmeup_game" VALUES(3,'2010-04-21','Texas Rangers');
+INSERT INTO "soxmeup_game" VALUES(4,'2010-05-03','Los Angeles Angels');
+INSERT INTO "soxmeup_game" VALUES(5,'2010-06-16','Arizona Diamondbacks');
+INSERT INTO "soxmeup_game" VALUES(6,'2010-07-03','Baltimore Orioles');
+INSERT INTO "soxmeup_game" VALUES(7,'2010-08-21','Toronto Blue Jays');
+INSERT INTO "soxmeup_game" VALUES(8,'2010-09-06','Tampa Bay Rays');
+INSERT INTO "soxmeup_game" VALUES(9,'2010-09-20','Baltimore Orioles');
+INSERT INTO "soxmeup_game" VALUES(10,'2010-10-02','New York Yankees');
 CREATE TABLE "soxmeup_friend" (
     "id" integer NOT NULL PRIMARY KEY,
     "name" varchar(100) NOT NULL,
